@@ -121,7 +121,7 @@
 			$event.preventDefault();
 			
 			// Edit this item's row
-			jQuery( '#' + jQuery( this ).data( 'item-row' ) ).lock_your_updates_list_table_edit_note( jQuery( this ).attr( 'href' ) );
+			jQuery( this ).parents('tr').prev().lock_your_updates_list_table_edit_note( jQuery( this ).attr( 'href' ) );
 		
 		});
 		
@@ -560,7 +560,7 @@
 										$event.preventDefault();
 										
 										// Edit this item's row
-										jQuery( '#' + jQuery( this ).data( 'item-row' ) ).lock_your_updates_list_table_edit_note( jQuery( this ).attr( 'href' ) );
+										jQuery( this ).parents('tr').lock_your_updates_list_table_edit_note( jQuery( this ).attr( 'href' ) );
 									
 									});									
 									 
