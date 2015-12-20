@@ -892,7 +892,7 @@ class Lock_Your_Updates_Admin {
 			
 			$preview_notes_row .= '<tr id="lock-your-updates-' . $item_html_id . '-preview-notes-row" class="plugin-update-tr lock-your-updates-preview-notes-tr" data-file="' . $item_html_id . '">
 				<td colspan="' . $wp_list_table_column_count . '" class="plugin-update colspanchange">
-					<div class="update-message preview-lock-updates-notes-message' . ( $item_is_locked ? ' locked' : NULL ) . '">';
+					<div class="preview-lock-updates-notes-message' . ( $item_is_locked ? ' locked' : NULL ) . '">';
 						
 						// Print the notes
 						$preview_notes_row .= wp_trim_words( $item_notes, 15 );
